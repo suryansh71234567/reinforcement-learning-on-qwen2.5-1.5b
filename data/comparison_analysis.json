@@ -1,0 +1,664 @@
+{
+  "base_accuracy": 0.415,
+  "trained_accuracy": 0.645,
+  "improvement": 0.23000000000000004,
+  "learned_count": 57,
+  "forgotten_count": 11,
+  "learned": [
+    {
+      "index": 2,
+      "type": "MATH_SV",
+      "prompt": "$100_{10}$ in base $b$ has exactly X digits. The value of $b$ is 3. What is the value of unknown variable X?",
+      "ground_truth": "5",
+      "trained_pred": "5",
+      "trained_response": " To solve this problem, we need to determine the value of x, which represents the number of digits in the base b representation of the decimal number 100.\nWe know that the value of b is 3. Let's convert the decimal number 100 to base 3:\n100 / 3 = 33 remainder 1\n33 / 3 = 11 remainder 0\n11 / 3 = 3 remainder 2\n3 / 3 = 1 remainder 0\nTherefore, the base 3 representation of 100 is 10201.\nSince there are 5 digits in this representation, the value of x is 5.\nThe answer is: 5"
+    },
+    {
+      "index": 8,
+      "type": "GSM_Rephrased",
+      "prompt": "If Lisa initially had 36 candies and she consumes 2 candies on Mondays and Wednesdays, and 1 candy on the other days of the week, how many weeks will it take for her to finish eating all the candies?",
+      "ground_truth": "4",
+      "trained_pred": "4",
+      "trained_response": " To determine how many weeks it will take for Lisa to finish eating all 36 candies, we need to calculate her weekly candy consumption first.\n\nLisa consumes:\n- 2 candies on Mondays and Wednesdays (which is a total of \\(2 + 2 = 4\\) candies per week),\n- 1 candy on the other days of the week (which is a total of 7 - 2 = 5 candies per week).\n\nSo, her weekly candy consumption is:\n\\[4 \\text{ (Monday and Wednesday)} + 5 \\text{ (other days)} = 9 \\text{ candies per week}.\\]\n\nNext, we need to find out how "
+    },
+    {
+      "index": 15,
+      "type": "MATH_SV",
+      "prompt": "For a certain natural number $n$, $n^2$ gives a remainder of 4 when divided by 5, and $n^3$ gives a remainder of 2 when divided by X. The remainder that $n$ gives when divided by 5 is 3. What is the v",
+      "ground_truth": "5",
+      "trained_pred": "5.",
+      "trained_response": " To solve for the unknown variable \\(X\\), we start with the given conditions:\n\n1. \\(n^2 \\equiv 4 \\pmod{5}\\)\n2. \\(n^3 \\equiv 2 \\pmod{X}\\)\n3. The remainder when \\(n\\) is divided by 5 is 3.\n\nFirst, let's determine the possible values of \\(n\\) modulo 5. Since \\(n \\equiv 3 \\pmod{5}\\), we can write:\n\\[ n = 5k + 3 \\]\nfor some integer \\(k\\).\n\nNow, we need to find \\(n^2 \\pmod{5}\\):\n\\[ n^2 = (5k + 3)^2 = 25k^2 + 30k + 9 = 5(5k^2 + 6k) + 4. \\]\nThus,\n\\[ n^2 \\equiv 4 \\pmod{5}. \\]\nThis condition is satisfied "
+    },
+    {
+      "index": 21,
+      "type": "GSM_Rephrased",
+      "prompt": "If the minimum age requirement to work at a company is 25 years and Dara, who aspires to work for the company, will be half the age of Jane in six years, and Jane is currently 28 years old and already",
+      "ground_truth": "14",
+      "trained_pred": "14",
+      "trained_response": " To determine how many more years it will take for Dara to reach the minimum age requirement of 25 years, we need to follow these steps:\n\n1. Determine Jane's current age.\n2. Calculate Jane's age in six years.\n3. Use the information that Dara will be half the age of Jane in six years to find Dara's current age.\n4. Calculate how many more years it will take for Dara to reach 25 years old.\n\nFirst, we know that Jane is currently 28 years old and she will be 34 years old in six years (since \\(28 + 6 "
+    },
+    {
+      "index": 22,
+      "type": "GSM_AnsAug",
+      "prompt": "A library cabinet houses five ancient scrolls. The first scroll is 4080 years old. If each scroll is older than the last by half as many years as the last scroll’s age, how old is the fifth scroll?",
+      "ground_truth": "20655",
+      "trained_pred": "20655",
+      "trained_response": " To determine the age of the fifth scroll, we need to calculate the age of each scroll step by step based on the given information.\n\n1. **Age of the first scroll:**\n   \\[\n   A_1 = 4080 \\text{ years}\n   \\]\n\n2. **Age of the second scroll:**\n   The second scroll is older than the first by half as many years as the first scroll's age.\n   \\[\n   A_2 = A_1 + \\frac{A_1}{2} = 4080 + \\frac{4080}{2} = 4080 + 2040 = 6120 \\text{ years}\n   \\]\n\n3. **Age of the third scroll:**\n   The third scroll is older than "
+    },
+    {
+      "index": 23,
+      "type": "MATH_FOBAR",
+      "prompt": "What is $\\frac{1}{4}\\%$ of X? Express your answer as a decimal.\nIf we know the answer to the above question is 0.3, what is the value of unknown variable X?",
+      "ground_truth": "120",
+      "trained_pred": "120",
+      "trained_response": " We want to find the value of $X$ in the given situation.\nWe are told that $\\frac{1}{4}\\%$ of $X$ is equal to 0.3.\nTo solve this, we can set up an equation:\n$\\frac{1}{4}\\% \\times X = 0.3$\nConverting $\\frac{1}{4}\\%$ to a decimal, we have:\n$\\frac{1}{4} \\div 100 \\times X = 0.3$\nSimplifying the left side of the equation, we get:\n$\\frac{1}{400} \\times X = 0.3$\nTo solve for $X$, we can multiply both sides of the equation by 400:\n$X = 0.3 \\times 400$\nSimplifying, we find:\n$X = 120$\nThe value of X is 12"
+    },
+    {
+      "index": 34,
+      "type": "MATH_SV",
+      "prompt": "Emily's quiz scores so far are: 92, 95, 87, 89 and 100. She needs to get a score of 95 on the sixth quiz to make the arithmetic mean of the six scores equal X. What is the value of unknown variable X?",
+      "ground_truth": "93",
+      "trained_pred": "93",
+      "trained_response": " To determine the value of \\(X\\), we need to calculate the arithmetic mean of Emily's six quiz scores and set it equal to \\(X\\). The arithmetic mean is calculated by summing all the scores and then dividing by the number of scores.\n\nFirst, let's find the total score if Emily gets a 95 on her sixth quiz. We start with the sum of her current five quiz scores:\n\\[92 + 95 + 87 + 89 + 100 = 463\\]\n\nIf she adds a 95 to this sum, the new total score will be:\n\\[463 + 95 = 558\\]\n\nSince there are now six sc"
+    },
+    {
+      "index": 36,
+      "type": "GSM_SV",
+      "prompt": "Bruce buys 5 packs of crayons at $5 each, 10 books at $5 each, and 3 calculators at $5 each. If he has x, He can buy 11 bags with the change if one costs $10 each. What is the value of unknown variabl",
+      "ground_truth": "200",
+      "trained_pred": "200",
+      "trained_response": " To solve this problem, we need to determine the value of x, which represents how much money Bruce has.\nLet's break down the information given:\nNumber of packs of crayons: 5\nCost per pack of crayons: $5\nNumber of books: 10\nCost per book: $5\nNumber of calculators: 3\nCost per calculator: $5\nNumber of bags: 11\nCost per bag: $10\nWe can set up the equation as follows:\nTotal cost of packs of crayons + Total cost of books + Total cost of calculators = Total amount of money Bruce has - Cost of bags\n(5 *"
+    },
+    {
+      "index": 42,
+      "type": "MATH_AnsAug",
+      "prompt": "Round $54.\\overline{54}$ to the nearest hundredth.",
+      "ground_truth": "54.55",
+      "trained_pred": "54.55",
+      "trained_response": " To round \\( 54.\\overline{54} \\) (which means \\( 54.545454\\ldots \\)) to the nearest hundredth, we need to follow these steps:\n\n1. Identify the digit in the tenths place and the hundredths place.\n2. Determine if rounding up or down is necessary.\n\nThe number \\( 54.\\overline{54} \\) can be written as \\( 54.545454\\ldots \\). Here, the digits after the decimal point are repeating in a pattern of \"54\".\n\n- The digit in the tenths place (the first digit to the right of the decimal point) is 5.\n- The digit"
+    },
+    {
+      "index": 45,
+      "type": "GSM_FOBAR",
+      "prompt": "Vince owns a hair salon and he earns $x per head. His monthly expenses are $280 for rent and electricity and 20% of his earnings are allocated for recreation and relaxation. He will save the rest. How",
+      "ground_truth": "18",
+      "trained_pred": "18",
+      "trained_response": " Vince earns $x per head from each customer.\nHe serves 80 customers a month, so his total earnings are 80 * x dollars.\nHis monthly expenses for rent and electricity are $280.\n20% of his earnings are allocated for recreation and relaxation, which means he spends (20/100) * (80 * x) = 16x dollars on recreation and relaxation.\nThe amount he saves is the difference between his total earnings and his expenses: 80 * x - $280 - 16x.\nWe are given that the amount he saves is $872, so we can write: 80 * x"
+    },
+    {
+      "index": 48,
+      "type": "GSM_AnsAug",
+      "prompt": "James needs 200 blueberries to make a pint of blueberry jam and then a quart of blueberry jam to make a blueberry pie. If there are two pints per quart, how many blueberries does James need to pick to",
+      "ground_truth": "2400",
+      "trained_pred": "2400",
+      "trained_response": " To determine the number of blueberries James needs to pick to make 6 pies, we can break down the problem step by step.\n\n1. **Calculate the number of quarts needed for 6 pies:**\n   Since there are 2 pints per quart and each pint is made from 200 blueberries, a quart requires:\n   \\[\n   2 \\text{ pints/quart} \\times 200 \\text{ blueberries/pint} = 400 \\text{ blueberries/quart}\n   \\]\n   Therefore, to make one pie (which is equivalent to 1 quart of jam), James needs:\n   \\[\n   400 \\text{ blueberries}\n "
+    },
+    {
+      "index": 49,
+      "type": "MATH_AnsAug",
+      "prompt": "The hypotenuse of an isosceles right triangle is $4\\sqrt{2}$ units. How many square units are in the area of the triangle?",
+      "ground_truth": "8",
+      "trained_pred": "8",
+      "trained_response": " To find the area of the isosceles right triangle, we start by noting that in an isosceles right triangle, the two legs are equal and the hypotenuse can be expressed using the Pythagorean theorem as \\(c = a\\sqrt{2}\\), where \\(a\\) is the length of each leg. Here, the hypotenuse is given as \\(4\\sqrt{2}\\) units.\n\nWe set up the equation:\n\\[a\\sqrt{2} = 4\\sqrt{2}\\]\n\nBy dividing both sides by \\(\\sqrt{2}\\), we find that:\n\\[a = 4\\]\n\nSo, each leg of the triangle is 4 units long. The area \\(A\\) of a right "
+    },
+    {
+      "index": 53,
+      "type": "GSM_Rephrased",
+      "prompt": "If you invest $300 in an investment bank that provides 10 percent interest at the end of every month, how much money will you have in total, including interest, after 2 months?",
+      "ground_truth": "363",
+      "trained_pred": "363",
+      "trained_response": " To determine how much money you will have in total after 2 months with a monthly interest rate of 10%, we can follow these steps:\n\n1. Calculate the amount of money after the first month.\n2. Use that amount to calculate the amount after the second month.\n\n**Step 1: Calculate the amount after the first month.**\n\nThe initial investment is $300, and it earns 10% interest at the end of the first month. The interest earned in the first month is:\n\\[ 300 \\times 0.10 = 30 \\]\nSo, the total amount after t"
+    },
+    {
+      "index": 55,
+      "type": "MATH_Rephrased",
+      "prompt": "If the side length of a square is $(x-2)$ and a rectangle has a length of $(x-3)$ and a width of $(x+4)$, and the area of the rectangle is twice the area of the square, what is the sum of all possible",
+      "ground_truth": "9",
+      "trained_pred": "9",
+      "trained_response": " To solve for \\( x \\) given that the side length of the square is \\( (x-2) \\), the length of the rectangle is \\( (x-3) \\), and the width of the rectangle is \\( (x+4) \\), we start by expressing the areas of both shapes.\n\nThe area of the square is:\n\\[\n(x-2)^2\n\\]\nThe area of the rectangle is:\n\\[\n(x-3)(x+4)\n\\]\nAccording to the problem, the area of the rectangle is twice the area of the square. Therefore, we can write the equation:\n\\[\n(x-3)(x+4) = 2(x-2)^2\n\\]\n\nNext, we expand both sides of the equati"
+    },
+    {
+      "index": 56,
+      "type": "GSM_Rephrased",
+      "prompt": "If Caroline initially had 40 pairs of socks and lost 4 pairs at the laundromat, and then donated two-thirds of the remaining pairs to the thrift store, and finally purchased 10 new pairs and received ",
+      "ground_truth": "25",
+      "trained_pred": "25.",
+      "trained_response": " Initially, Caroline had 40 pairs of socks.\nShe lost 4 pairs at the laundromat, so she now has 40 - 4 = 36 pairs of socks remaining.\nShe then donated two-thirds of the remaining pairs to the thrift store, which is (2/3) * 36 = 24 pairs.\nAfter donating, Caroline has 36 - 24 = 12 pairs of socks left.\nFinally, she purchased 10 new pairs and received 3 new pairs as a gift, so she now has 12 + 10 + 3 = 25 pairs of socks in total.\n\nTherefore, the answer is 25."
+    },
+    {
+      "index": 60,
+      "type": "GSM_AnsAug",
+      "prompt": "At the end of a circus act, there are 12 dogs on stage.  Half of the dogs are standing on their back legs and the other half are standing on all 4 legs.  How many dog paws are on the ground?",
+      "ground_truth": "36",
+      "trained_pred": "36",
+      "trained_response": " To determine how many dog paws are on the ground at the end of the circus act, we need to follow these steps:\n\n1. **Calculate the number of dogs standing on each leg:**\n   - There are 12 dogs in total.\n   - Half of the dogs are standing on their back legs, and the other half are standing on all four legs.\n\n   \\[\n   \\text{Number of dogs standing on back legs} = \\frac{12}{2} = 6\n   \\]\n\n   \\[\n   \\text{Number of dogs standing on all four legs} = \\frac{12}{2} = 6\n   \\]\n\n2. **Determine the number of "
+    },
+    {
+      "index": 62,
+      "type": "GSM_SV",
+      "prompt": "Josephine receives a bill from the hospital for x$.  50 percent of the bill is for medication.  25 percent of the remaining bill is for overnight stays, and 175$ is for food.  The rest of the bill is ",
+      "ground_truth": "5000",
+      "trained_pred": "5000",
+      "trained_response": " To solve this problem, we need to determine the value of x, which represents the total amount of money that Josephine received from the hospital bill.\nLet's break down the information given:\n50% of the bill is for medication\n25% of the remaining bill is for overnight stays\n175$ is for food\nThe rest of the bill is for the ambulance ride, which costs $1700\nWe can set up the equation as follows:\nTotal bill = 50% of medication + 25% of (remaining bill - 50% of medication) + 175$ + $1700\nLet's simpl"
+    },
+    {
+      "index": 66,
+      "type": "GSM_Rephrased",
+      "prompt": "If a hairstylist charges $5 for a normal haircut, $6 for a special haircut, and $8 for a trendy haircut, and he cuts 5 normal haircuts, 3 special haircuts, and 2 trendy haircuts per day, what is the t",
+      "ground_truth": "413",
+      "trained_pred": "413.",
+      "trained_response": " The hairstylist earns $5 x 5 = $<<5*5=25>>25 from normal haircuts.\nHe earns $6 x 3 = $<<6*3=18>>18 from special haircuts.\nAnd he earns $8 x 2 = $<<8*2=16>>16 from trendy haircuts.\n\nTherefore, the hairstylist earns a total of $25 + $18 + $16 = $<<25+18+16=59>>59 per day.\n\nSince there are 7 days in a week, he earns a total of $59 x 7 = $<<59*7=413>>413 per week.\n\nTherefore, the answer is 413."
+    },
+    {
+      "index": 67,
+      "type": "GSM_SV",
+      "prompt": "Emery and Serena go to their school library, and each borrows a copy of The life of Jack Steve's book to read for their school project. If Emery can read five times as fast as Serena, and the book tak",
+      "ground_truth": "20",
+      "trained_pred": "20",
+      "trained_response": " To solve this problem, we need to determine the value of x, which represents the number of days it takes Emery to read the book.\nWe know that Emery can read five times as fast as Serena. Therefore, if Serena takes y days to read the book, Emery will take 5y days to read the book.\nThe average number of days taken by both Emery and Serena is 60.\nWe can set up the equation as follows:\n(Emery's reading time + Serena's reading time) / 2 = Average reading time\n(5y + y) / 2 = 60\nLet's simplify and sol"
+    },
+    {
+      "index": 68,
+      "type": "MATH_AnsAug",
+      "prompt": "Round $54.\\overline{54}$ to the nearest hundredth.",
+      "ground_truth": "54.55",
+      "trained_pred": "54.55",
+      "trained_response": " To round \\( 54.\\overline{54} \\) (which means \\( 54.545454\\ldots \\)) to the nearest hundredth, we need to follow these steps:\n\n1. Identify the digit in the tenths place and the hundredths place.\n2. Determine if rounding up or down is necessary.\n\nThe number \\( 54.\\overline{54} \\) can be written as \\( 54.545454\\ldots \\). Here, the digits after the decimal point are repeating in a pattern of \"54\".\n\n- The digit in the tenths place (the first digit to the right of the decimal point) is 5.\n- The digit"
+    },
+    {
+      "index": 70,
+      "type": "GSM_FOBAR",
+      "prompt": "The grocery store sells chips for $2 per packet and corn chips for $x per packet. John would like to buy 15 packets of chips, and with the rest of the money he has left, buy as many packets of corn ch",
+      "ground_truth": "1.5",
+      "trained_pred": "1.5",
+      "trained_response": " We are given that John would like to buy 15 packets of chips at $2 per packet and with the rest of the money he has left, buy as many packets of corn chips as he can.\nThe cost of 15 packets of chips is: 15 * $2 = $30\nLet's represent the number of packets of corn chips John could buy as y.\nThe total amount of money John has for his entire purchase is $45, so we can write:\n$30 + x*y = $45\nSimplifying this equation gives us: x*y = $15\nWe are given that the value of y is 10, so we can substitute it"
+    },
+    {
+      "index": 73,
+      "type": "GSM_SV",
+      "prompt": "Rosie runs 6 miles per hour. She runs for 1 hour on Monday, 30 minutes on Tuesday, 1 hour on Wednesday, and 20 minutes on Thursday. If she wants to run x miles for the week, She should run 30 minutes ",
+      "ground_truth": "20",
+      "trained_pred": "20",
+      "trained_response": " To solve this problem, we need to determine the value of x, which represents the total number of miles Rosie wants to run for the week.\nLet's break down the information given:\nRosie runs at a speed of 6 miles per hour.\nOn Monday, she runs for 1 hour.\nOn Tuesday, she runs for 30 minutes (which is 0.5 hours).\nOn Wednesday, she runs for 1 hour.\nOn Thursday, she runs for 20 minutes (which is 1/3 hours).\nOn Friday, she wants to run for 30 minutes (which is 0.5 hours).\nWe can calculate the total dist"
+    },
+    {
+      "index": 76,
+      "type": "MATH_AnsAug",
+      "prompt": "A coin is flipped eight times, and the sequence of heads and tails occurring is recorded. How many distinct sequences are possible?",
+      "ground_truth": "256",
+      "trained_pred": "256",
+      "trained_response": " To determine the number of distinct sequences that can be formed by flipping a coin eight times, we need to consider that each flip has two possible outcomes: heads (H) or tails (T). Since the flips are independent events, the total number of different sequences is given by the product of the number of choices for each flip.\n\nHere's the step-by-step reasoning:\n\n1. For the first flip, there are 2 possible outcomes (H or T).\n2. For the second flip, there are also 2 possible outcomes (H or T).\n3. "
+    },
+    {
+      "index": 87,
+      "type": "GSM_SV",
+      "prompt": "The grocery store sells chips for $2 per packet and corn chips for $1.5 per packet. John would like to buy 15 packets of chips, and with the rest of the money he has left, buy as many packets of corn ",
+      "ground_truth": "45",
+      "trained_pred": "45",
+      "trained_response": " To solve this problem, we need to determine the value of x, which represents the amount of money John has for his entire purchase.\nLet's break down the information given:\nCost per packet of chips: $2\nNumber of packets of chips John wants to buy: 15\nCost per packet of corn chips: $1.5\nNumber of packets of corn chips John can buy with the remaining money: 10\nWe can set up the equation as follows:\nTotal cost of chips + Total cost of corn chips = Amount of money John has for his entire purchase\n(15"
+    },
+    {
+      "index": 91,
+      "type": "MATH_SV",
+      "prompt": "If $(x + y)^2 = 25$ and $xy = X$, The value of $x^2 + y^2$ is 13. What is the value of unknown variable X?",
+      "ground_truth": "6",
+      "trained_pred": "6",
+      "trained_response": " To solve this problem, we need to determine the value of x, which represents one of the variables in the given equations.\nLet's break down the information given:\n$(x + y)^2 = 25$\n$xy = X$\n$x^2 + y^2 = 13$\nWe can start by expanding $(x + y)^2$ using the formula $(a + b)^2 = a^2 + 2ab + b^2$.\n$(x + y)^2 = x^2 + 2xy + y^2$\nNow, we can substitute the given values into this equation:\n$x^2 + 2xy + y^2 = 25$\nWe also know that $x^2 + y^2 = 13$, so we can substitute this value as well:\n$13 + 2xy = 25$\nN"
+    },
+    {
+      "index": 93,
+      "type": "GSM_Rephrased",
+      "prompt": "If a school bus has 4 columns and 10 rows of seats, and the school has 6 buses in total, what is the maximum number of students that the buses can accommodate?",
+      "ground_truth": "240",
+      "trained_pred": "240",
+      "trained_response": " To determine the maximum number of students that the buses can accommodate, we need to follow these steps:\n\n1. Calculate the seating capacity of one bus.\n2. Multiply the seating capacity of one bus by the number of buses.\n\nFirst, let's find out how many seats are in one bus. The bus has 4 columns and 10 rows of seats. Therefore, the total number of seats in one bus is:\n\\[ 4 \\text{ columns} \\times 10 \\text{ rows} = 40 \\text{ seats} \\]\n\nNext, we need to find out how many students can be accommoda"
+    },
+    {
+      "index": 94,
+      "type": "MATH_SV",
+      "prompt": "The mean (average) of X, 9 and 18 is equal to the mean (average) of 12 and $y$. The value of $y$ is 10. What is the value of unknown variable X?",
+      "ground_truth": "6",
+      "trained_pred": "6",
+      "trained_response": " To solve this problem, we need to determine the value of x, which represents one of the numbers in the set.\nLet's break down the information given:\nMean of X, 9 and 18: (X + 9 + 18) / 3\nMean of 12 and y: (12 + y) / 2\nWe are told that these two means are equal, so we can set up the equation as follows:\n(X + 9 + 18) / 3 = (12 + y) / 2\nLet's simplify and solve for x:\n(X + 27) / 3 = (12 + y) / 2\nTo eliminate fractions, we multiply both sides of the equation by 6:\n6 * ((X + 27) / 3) = 6 * ((12 + y) "
+    },
+    {
+      "index": 95,
+      "type": "MATH_Rephrased",
+      "prompt": "Determine the remainder when $99^{36}$ is divided by 100.",
+      "ground_truth": "1",
+      "trained_pred": "1",
+      "trained_response": " To determine the remainder when \\(99^{36}\\) is divided by 100, we can use properties of modular arithmetic and Euler's theorem. First, note that \\(99 \\equiv -1 \\pmod{100}\\). Therefore, we have:\n\n\\[\n99^{36} \\equiv (-1)^{36} \\pmod{100}\n\\]\n\nSince \\((-1)^{36} = 1\\) (because 36 is an even number), it follows that:\n\n\\[\n99^{36} \\equiv 1 \\pmod{100}\n\\]\n\nThus, the remainder when \\(99^{36}\\) is divided by 100 is \\(\\boxed{1}\\)."
+    },
+    {
+      "index": 104,
+      "type": "GSM_AnsAug",
+      "prompt": "Olaf is playing a game with his dad. He scored three times more points than his dad, who scored 7 points. How many points did they score in total?",
+      "ground_truth": "28",
+      "trained_pred": "28",
+      "trained_response": " To determine the total number of points scored by Olaf and his dad, we need to follow these steps:\n\n1. Identify how many points Olaf's dad scored.\n2. Calculate how many points Olaf scored based on the information given.\n3. Add the points scored by both Olaf and his dad to find the total.\n\nFirst, we know that Olaf's dad scored 7 points. According to the problem, Olaf scored three times more points than his dad. Therefore, we can calculate Olaf's score as follows:\n\\[\n\\text{Olaf's score} = 3 \\time"
+    },
+    {
+      "index": 112,
+      "type": "GSM_Rephrased",
+      "prompt": "If Julia's internet speed is 20 MBps and each song size is 5MB, how many songs can she download in half an hour?",
+      "ground_truth": "7200",
+      "trained_pred": "7200",
+      "trained_response": " To determine how many songs Julia can download in half an hour with her internet speed of 20 MBps (megabytes per second) and each song being 5 MB (megabytes), we need to follow these steps:\n\n1. Calculate the total amount of data that can be downloaded in half an hour.\n2. Determine how many songs can be downloaded with that amount of data.\n\nFirst, let's find out how much data Julia can download in half an hour. Since there are 60 minutes in an hour and half an hour is 30 minutes, we convert the "
+    },
+    {
+      "index": 117,
+      "type": "MATH_Rephrased",
+      "prompt": "If the number of bacteria in a lab dish doubles every four hours and there are currently 500 bacteria cells in the dish, how many hours will it take for the number of bacteria to reach 32,000?",
+      "ground_truth": "24",
+      "trained_pred": "24",
+      "trained_response": " To determine how long it takes for the number of bacteria to reach 32,000 starting from an initial count of 500 bacteria, we need to understand that the population doubles every four hours. Let's denote the current time as \\( t = 0 \\) and the initial number of bacteria as \\( N_0 = 500 \\).\n\nThe formula for the number of bacteria after \\( t \\) hours is given by:\n\\[ N(t) = N_0 \\cdot 2^{t/4} \\]\nwhere \\( N(t) \\) is the number of bacteria at time \\( t \\), and \\( N_0 \\) is the initial number of bacter"
+    },
+    {
+      "index": 118,
+      "type": "MATH_Rephrased",
+      "prompt": "The length of a square is (x-2), while a rectangle has a length of (x-3) and a width of (x+4). If the area of the rectangle is twice the area of the square, what is the sum of all possible values of x",
+      "ground_truth": "9",
+      "trained_pred": "9",
+      "trained_response": " To solve for \\( x \\) given that the area of the rectangle is twice the area of the square, we start by expressing the areas in terms of \\( x \\).\n\nFirst, calculate the area of the square:\n\\[\n\\text{Area of the square} = (x-2)^2\n\\]\n\nNext, calculate the area of the rectangle. The length of the rectangle is \\( x-3 \\) and the width is \\( x+4 \\), so the area of the rectangle is:\n\\[\n\\text{Area of the rectangle} = (x-3)(x+4)\n\\]\n\nAccording to the problem, the area of the rectangle is twice the area of th"
+    },
+    {
+      "index": 122,
+      "type": "GSM_AnsAug",
+      "prompt": "Lydia has a small pool she uses to bathe her dogs.  When full, the pool holds 60 gallons of water.  She fills her pool using the garden hose, which provides water at the rate of 1.6 gallons per minute",
+      "ground_truth": "40",
+      "trained_pred": "40",
+      "trained_response": " To determine how long it will take Lydia to fill her pool, we need to consider both the rate at which she is filling the pool and the rate at which water is leaking out.\n\nFirst, let's calculate the net rate of water being added to the pool. The garden hose fills the pool at a rate of 1.6 gallons per minute, but there is also a leak that removes water at a rate of 0.1 gallons per minute. Therefore, the net rate of water being added to the pool is:\n\\[ 1.6 \\text{ gallons/minute} - 0.1 \\text{ gallo"
+    },
+    {
+      "index": 123,
+      "type": "GSM_AnsAug",
+      "prompt": "Vinny weighed 300 pounds then lost 20 pounds in the first month of his diet. He continued his diet but each month, he lost half as much weight as he had lost in the previous month. At the start of the",
+      "ground_truth": "12",
+      "trained_pred": "12",
+      "trained_response": " To determine how much weight Vinny lost in the fifth month, we need to calculate his weight loss for each month and sum it up until we reach the fifth month.\n\n1. **Initial Weight**: Vinny started with 300 pounds.\n2. **First Month**: He lost 20 pounds.\n   \\[\n   \\text{Weight after first month} = 300 - 20 = 280 \\text{ pounds}\n   \\]\n3. **Second Month**: He lost half of the weight he lost in the first month, which is \\( \\frac{20}{2} = 10 \\) pounds.\n   \\[\n   \\text{Weight after second month} = 280 - 1"
+    },
+    {
+      "index": 127,
+      "type": "GSM_AnsAug",
+      "prompt": "At a birthday party, 30% of the guests are married, 50% are single, and the rest are children. If there are 1000 guests, how many more married people are there than children?",
+      "ground_truth": "100",
+      "trained_pred": "100",
+      "trained_response": " To determine how many more married people there are than children at the birthday party, we need to follow these steps:\n\n1. Calculate the number of married guests.\n2. Calculate the number of single guests.\n3. Determine the number of children by subtracting the number of married and single guests from the total number of guests.\n4. Find the difference between the number of married guests and the number of children.\n\nFirst, let's calculate the number of married guests:\n\\[ \\text{Number of married "
+    },
+    {
+      "index": 132,
+      "type": "MATH_AnsAug",
+      "prompt": "What is the units digit of $23^{23}$?",
+      "ground_truth": "7",
+      "trained_pred": "7",
+      "trained_response": " To determine the units digit of \\( 23^{23} \\), we first observe that the units digit of a number depends only on its last digit. Therefore, we need to find the units digit of \\( 3^{23} \\).\n\nLet's examine the pattern in the units digits of powers of 3:\n\\[\n\\begin{aligned}\n3^1 & = 3 \\quad (\\text{units digit is } 3) \\\\\n3^2 & = 9 \\quad (\\text{units digit is } 9) \\\\\n3^3 & = 27 \\quad (\\text{units digit is } 7) \\\\\n3^4 & = 81 \\quad (\\text{units digit is } 1) \\\\\n3^5 & = 243 \\quad (\\text{units digit is } "
+    },
+    {
+      "index": 136,
+      "type": "MATH_AnsAug",
+      "prompt": "What is the units digit of $23^{23}$?",
+      "ground_truth": "7",
+      "trained_pred": "7",
+      "trained_response": " To determine the units digit of \\( 23^{23} \\), we first observe that the units digit of a number depends only on its last digit. Therefore, we need to find the units digit of \\( 3^{23} \\).\n\nLet's examine the pattern in the units digits of powers of 3:\n\\[\n\\begin{aligned}\n3^1 & = 3 \\quad (\\text{units digit is } 3) \\\\\n3^2 & = 9 \\quad (\\text{units digit is } 9) \\\\\n3^3 & = 27 \\quad (\\text{units digit is } 7) \\\\\n3^4 & = 81 \\quad (\\text{units digit is } 1) \\\\\n3^5 & = 243 \\quad (\\text{units digit is } "
+    },
+    {
+      "index": 138,
+      "type": "GSM_Rephrased",
+      "prompt": "If Yella's computer usage last week was 91 hours and she plans to use the computer for 8 hours each day this week, what is the difference in her computer usage for this week compared to last week?",
+      "ground_truth": "35",
+      "trained_pred": "35",
+      "trained_response": " Last week, Yella used the computer for 91 hours.\nThis week, she plans to use the computer for 8 hours each day.\nThere are 7 days in a week, so she will use the computer for a total of 8 x 7 = 56 hours this week.\nThe difference between her computer usage last week and this week is 91 - 56 = 35 hours.\n#### 35\nThe answer is: 35"
+    },
+    {
+      "index": 139,
+      "type": "MATH_SV",
+      "prompt": "Given that $a > 0$, if $f(g(a)) = 8$, where $f(x) = x^2 + X and $g(x) = x^2 - 4$, The value of $a$ is 2. What is the value of unknown variable X?",
+      "ground_truth": "8",
+      "trained_pred": "8",
+      "trained_response": " To solve this problem, we need to determine the value of x, which represents the unknown variable in the function f.\nWe are given that $f(g(a)) = 8 and a > 0\nLet's substitute the values into the equation:\n$f(g(2)) = 8$\nNow let's simplify the expression inside the parentheses:\n$(g(2))^2 - 4 = 8$\n$4^2 - 4 = 8$\n$16 - 4 = 8$\n$12 \\neq 8$\nTherefore, there is no value of x that satisfies this equation.\nThe answer is: 8"
+    },
+    {
+      "index": 140,
+      "type": "GSM_FOBAR",
+      "prompt": "Raj's house has an area equal to 1,110 square feet. It has x bedrooms that each measure 11 x 11 feet. There are 2 bathrooms that are 6 x 8 feet each. The kitchen and living area complete the home and ",
+      "ground_truth": "4",
+      "trained_pred": "4",
+      "trained_response": " We know that Raj's house has an area equal to 1,110 square feet.\nWe also know that there are x bedrooms, each measuring 11x11 feet. So the total area of the bedrooms is x * (11*11) = 121x square feet.\nThere are 2 bathrooms, each measuring 6x8 feet. So the total area of the bathrooms is 2 * (6*8) = 96 square feet.\nThe kitchen and living area have the same sized area, so let's call this area y square feet.\nThe total area of Raj's house can be expressed as: 121x + 96 + y + y = 1,110\nSimplifying th"
+    },
+    {
+      "index": 144,
+      "type": "GSM_Rephrased",
+      "prompt": "If John needs to replace both of his damaged hearing aids, which cost $2500 each and insurance covers 80% of the cost, how much does he personally have to pay?",
+      "ground_truth": "1000",
+      "trained_pred": "1000",
+      "trained_response": " To determine how much John has to pay for replacing both damaged hearing aids after insurance coverage, we can follow these steps:\n\n1. Calculate the total cost of replacing both hearing aids.\n   Each hearing aid costs $2500, so for two hearing aids:\n   \\[\n   2500 + 2500 = 5000\n   \\]\n   Therefore, the total cost is $5000.\n\n2. Determine how much insurance covers of the total cost.\n   Insurance covers 80% of the total cost. So we calculate:\n   \\[\n   5000 \\times 0.80 = 4000\n   \\]\n   Therefore, insu"
+    },
+    {
+      "index": 147,
+      "type": "MATH_Rephrased",
+      "prompt": "Given that triangle ABC is an isosceles right triangle with angle A measuring 90 degrees and segment AC measuring 6 cm in length, what is the area of triangle ABC in square centimeters?",
+      "ground_truth": "18",
+      "trained_pred": "18",
+      "trained_response": " To find the area of triangle \\(ABC\\), we start by noting that it is an isosceles right triangle. In such a triangle, the two legs are equal in length, and the angle between them is 90 degrees.\n\nGiven:\n- The length of segment \\(AC\\) (one leg) is 6 cm.\n- Since \\(ABC\\) is an isosceles right triangle, the other leg \\(AB\\) must also be 6 cm.\n\nThe area \\(A\\) of a right triangle is given by the formula:\n\\[\nA = \\frac{1}{2} \\times \\text{base} \\times \\text{height}\n\\]\nHere, we can take \\(AC\\) as the base "
+    },
+    {
+      "index": 149,
+      "type": "GSM_AnsAug",
+      "prompt": "If there are 8 slices in a large pizza, how many slices will remain if Mary orders 2 large pizzas and eats 7 slices?",
+      "ground_truth": "9",
+      "trained_pred": "9",
+      "trained_response": " To determine how many slices of pizza remain after Mary eats some, we can follow these steps:\n\n1. Calculate the total number of pizza slices from 2 large pizzas.\n   Each large pizza has 8 slices, so for 2 large pizzas:\n   \\[\n   2 \\times 8 = 16\n   \\]\n   Therefore, there are 16 slices in total.\n\n2. Subtract the number of slices Mary eats from the total number of slices.\n   Mary eats 7 slices, so we subtract 7 from 16:\n   \\[\n   16 - 7 = 9\n   \\]\n\nThus, the number of slices that remain is \\(\\boxed{9"
+    },
+    {
+      "index": 151,
+      "type": "MATH_Rephrased",
+      "prompt": "Given that one endpoint of a line segment is (4,3) and its midpoint is (2,9), what is the sum of the coordinates of the other endpoint?",
+      "ground_truth": "15",
+      "trained_pred": "15",
+      "trained_response": " To find the coordinates of the other endpoint of the line segment, we start by using the midpoint formula. The midpoint \\( M \\) of a line segment with endpoints \\( A(x_1, y_1) \\) and \\( B(x_2, y_2) \\) is given by:\n\n\\[\nM = \\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right)\n\\]\n\nWe know the coordinates of one endpoint \\( A \\) are \\( (4, 3) \\) and the midpoint \\( M \\) is \\( (2, 9) \\). Let the coordinates of the other endpoint \\( B \\) be \\( (x, y) \\).\n\nUsing the midpoint formula, we can set up "
+    },
+    {
+      "index": 152,
+      "type": "GSM_AnsAug",
+      "prompt": "Rex is taking lessons for his driver’s license. He wants to take 40 hour-long lessons before his test, and decides to have two-hour sessions twice a week until he has done his test. After 6 weeks, how",
+      "ground_truth": "4",
+      "trained_pred": "4",
+      "trained_response": " To determine how many more weeks Rex needs to continue taking lessons after 6 weeks, we can follow these steps:\n\n1. Calculate the total number of hours Rex has already taken in 6 weeks.\n2. Determine how many more hours he needs to take to reach his goal of 40 hours.\n3. Calculate how many additional weeks it will take him to complete those remaining hours.\n\nFirst, let's find out how many hours Rex has already taken in 6 weeks:\n- Rex takes two-hour sessions twice a week.\n- Therefore, each week he"
+    },
+    {
+      "index": 154,
+      "type": "GSM_AnsAug",
+      "prompt": "Dylan's mother is throwing a baby shower for her best friend. She is expecting 40 guests, of whom she has cleared the parking lot to park in to, leaving only her car and her husband's jeep in the park",
+      "ground_truth": "48",
+      "trained_pred": "48",
+      "trained_response": " To determine the total number of car wheels in the parking lot, we need to consider the following:\n\n1. The number of cars parked by Dylan's parents.\n2. The number of cars parked by the guests.\n\nFirst, let's identify the number of cars parked by Dylan's parents:\n- Dylan's mother has 40 guests and they arrive in 10 cars.\n- Since only her car and her husband's jeep are left in the parking lot, these two vehicles must be among the 10 cars parked by the guests.\n\nNext, we calculate the total number o"
+    },
+    {
+      "index": 155,
+      "type": "GSM_Rephrased",
+      "prompt": "If one-third of the 15 classrooms in a school have 30 desks each and the rest have 25 desks each, and only one student can sit at each desk, what is the maximum number of students that the school can ",
+      "ground_truth": "400",
+      "trained_pred": "400",
+      "trained_response": " To determine the maximum number of students that the school can accommodate, we need to calculate the total number of desks in the school. We know there are 15 classrooms and some have 30 desks each, while others have 25 desks each.\n\nFirst, let's find out how many classrooms have 30 desks each. Since one-third of the classrooms have 30 desks:\n\\[\n\\frac{1}{3} \\times 15 = 5\n\\]\nSo, there are 5 classrooms with 30 desks each. The remaining classrooms will have 25 desks each. To find out how many such"
+    },
+    {
+      "index": 157,
+      "type": "GSM_Rephrased",
+      "prompt": "If you initially have $32 to spend on groceries and you purchase a loaf of bread for $3, a candy bar for $2, and spend 1/3 of the remaining amount on a turkey, how much money do you have left?",
+      "ground_truth": "18",
+      "trained_pred": "18",
+      "trained_response": " Let's start by calculating the total cost of the items purchased so far. The initial amount of money is $32.\n\nFirst, we add the cost of the loaf of bread:\n\\[ \\text{Cost of bread} = \\$3 \\]\nSo, after buying the bread, the remaining amount is:\n\\[ 32 - 3 = \\$29 \\]\n\nNext, we add the cost of the candy bar to this remaining amount:\n\\[ \\text{Cost of candy bar} = \\$2 \\]\nSo, after buying the candy bar, the remaining amount is:\n\\[ 29 - 2 = \\$27 \\]\n\nNow, we need to determine how much money is spent on the "
+    },
+    {
+      "index": 160,
+      "type": "GSM_AnsAug",
+      "prompt": "In a week, Rayman works out for half the number of hours Junior takes to work out. Wolverine, their friend, works out for twice the combined total number of hours both Rayman and Junior take during th",
+      "ground_truth": "60",
+      "trained_pred": "60",
+      "trained_response": " To determine the number of hours Wolverine takes doing her workouts, we need to follow these steps:\n\n1. Identify the number of hours Rayman works out.\n2. Use this information to find the number of hours Junior works out.\n3. Calculate the combined total number of hours both Rayman and Junior work out.\n4. Determine the number of hours Wolverine works out based on the combined total.\n\nStep 1: Identify the number of hours Rayman works out.\nRayman works out for 10 hours in a week.\n\nStep 2: Use this "
+    },
+    {
+      "index": 162,
+      "type": "GSM_AnsAug",
+      "prompt": "Susie babysits every day for 3 hours a day at the rate of $10 per hour. She spent 3/10 of the money she earned from last week to buy a make-up set. She then spent 2/5 of her money on her skincare prod",
+      "ground_truth": "63",
+      "trained_pred": "63",
+      "trained_response": " To determine how much money Susie has left after her purchases, we need to follow these steps:\n\n1. Calculate the total number of hours Susie babysat last week.\n2. Determine her total earnings for the week.\n3. Calculate the amount spent on the make-up set.\n4. Calculate the remaining amount after buying the make-up set.\n5. Calculate the amount spent on skincare products.\n6. Determine the final amount left from her earnings.\n\nFirst, we calculate the total number of hours Susie babysat last week:\n\\"
+    },
+    {
+      "index": 163,
+      "type": "GSM_Rephrased",
+      "prompt": "If John volunteers at a shelter twice a month for 3 hours each time, what is the total number of hours he volunteers per year?",
+      "ground_truth": "72",
+      "trained_pred": "72",
+      "trained_response": " To determine the total number of hours John volunteers per year, we need to break down the problem into smaller steps.\n\n1. Calculate the number of times John volunteers in one month.\n   Since John volunteers twice a month, the number of times he volunteers in one month is:\n   \\[\n   2 \\text{ times/month}\n   \\]\n\n2. Determine the total number of hours John volunteers in one month.\n   Each time he volunteers for 3 hours, so the total number of hours he volunteers in one month is:\n   \\[\n   2 \\text{ "
+    },
+    {
+      "index": 165,
+      "type": "GSM_FOBAR",
+      "prompt": "Tom broke his leg and needed to go to the doctor.  The visit cost $300 and the cast cost x.  If insurance covered 60% how much was Tom's out-of-pocket cost?\nIf we know the answer to the above question",
+      "ground_truth": "200",
+      "trained_pred": "200",
+      "trained_response": " We are given that the visit cost $300 and the cast cost x.\nInsurance covers 60%, which means Tom has to pay 40% of the total cost.\nThe out-of-pocket cost can be calculated as: (1 - 0.6) * ($300 + x) = 0.4 * ($300 + x).\nWe are given that the out-of-pocket cost is $200, so we can write: 0.4 * ($300 + x) = $200.\nDividing both sides by 0.4, we get: $300 + x = $500.\nSubtracting $300 from both sides, we get: x = $200.\nThe value of x is $200.\n#### 200\nThe answer is: 200"
+    },
+    {
+      "index": 166,
+      "type": "MATH_AnsAug",
+      "prompt": "Simplify $\\sqrt{245}$.",
+      "ground_truth": "5",
+      "trained_pred": "7\\sqrt{5",
+      "trained_response": " To simplify \\(\\sqrt{245}\\), we start by finding the prime factorization of 245. We can do this step-by-step:\n\n1. Check if 245 is divisible by the smallest prime number, which is 2. Since 245 is odd, it is not divisible by 2.\n2. Next, check if 245 is divisible by 3. The sum of the digits of 245 (2 + 4 + 5 = 11) is not divisible by 3, so 245 is not divisible by 3.\n3. Check if 245 is divisible by 5. Since 245 ends in 5, it is divisible by 5. We perform the division: \\(245 \\div 5 = 49\\). So, we can"
+    },
+    {
+      "index": 176,
+      "type": "GSM_Rephrased",
+      "prompt": "If James has 4 barrels and each barrel can store 3 gallons more than twice the amount stored in a large cask, and a large cask can store 20 gallons, what is the total amount of water that James can st",
+      "ground_truth": "172",
+      "trained_pred": "172",
+      "trained_response": " To determine the total amount of water that James can store in his barrels, we need to follow these steps:\n\n1. Identify the capacity of one barrel.\n2. Calculate the total capacity of all four barrels.\n\nFirst, let's find out how much each barrel can store. According to the problem, each barrel can store 3 gallons more than twice the amount stored in a large cask. A large cask can store 20 gallons. Therefore, we calculate twice the amount stored in a large cask:\n\\[ 2 \\times 20 = 40 \\text{ gallons"
+    },
+    {
+      "index": 185,
+      "type": "MATH_SV",
+      "prompt": "What is the discriminant of $3x^2 - 7x - X$? The answer is 193. What is the value of unknown variable X?",
+      "ground_truth": "12",
+      "trained_pred": "12",
+      "trained_response": " To find the value of x, we need to determine the discriminant of the quadratic equation.\nThe discriminant of a quadratic equation in the form ax^2 + bx + c = 0 is given by b^2 - 4ac.\nIn this case, the quadratic equation is 3x^2 - 7x - X. So, we have:\na = 3\nb = -7\nc = -X\n\nThe discriminant is given as 193. We can set up the equation and solve for x:\n\n(-7)^2 - 4(3)(-X) = 193\n49 + 12X = 193\nTo isolate X, we subtract 49 from both sides of the equation:\n49 + 12X - 49 = 193 - 49\n12X = 144\nFinally, we "
+    },
+    {
+      "index": 188,
+      "type": "GSM_AnsAug",
+      "prompt": "A wood stove burns 4 bundles of wood in the morning, then some more in the afternoon. If there were 10 bundles of wood at the start of the day and 3 bundles of wood at the end of the day, how many bun",
+      "ground_truth": "3",
+      "trained_pred": "3",
+      "trained_response": " To determine how many bundles of wood were burned in the afternoon, we need to follow these steps:\n\n1. Identify the initial amount of wood.\n2. Determine the total amount of wood burned during the entire day.\n3. Calculate the amount of wood burned in the afternoon.\n\nFirst, let's identify the initial amount of wood:\n\\[ \\text{Initial amount} = 10 \\text{ bundles} \\]\n\nNext, we need to find out how much wood was left at the end of the day:\n\\[ \\text{Final amount} = 3 \\text{ bundles} \\]\n\nThe total amou"
+    },
+    {
+      "index": 189,
+      "type": "MATH_AnsAug",
+      "prompt": "How many different positive, six-digit integers can be formed using the digits 2, 2, 5, 5, 9 and 9?",
+      "ground_truth": "90",
+      "trained_pred": "90",
+      "trained_response": " To determine how many different positive six-digit integers can be formed using the digits 2, 2, 5, 5, 9, and 9, we need to consider that some of these digits are repeated. The formula for finding the number of distinct permutations of a multiset is given by:\n\n\\[\n\\frac{n!}{n_1! \\cdot n_2! \\cdot \\ldots \\cdot n_k!}\n\\]\n\nwhere \\( n \\) is the total number of items to arrange, and \\( n_1, n_2, \\ldots, n_k \\) are the frequencies of the distinct items. In this problem, we have 6 digits in total (n = 6)"
+    }
+  ],
+  "forgotten": [
+    {
+      "index": 16,
+      "type": "MATH_FOBAR",
+      "prompt": "In a history class, the probability of earning an A is .7 times the probability of earning a B, and the probability of earning a C is 1.4 times the probability of earning a B. Assuming that all grades",
+      "ground_truth": "31",
+      "base_pred": "31.",
+      "trained_pred": "21",
+      "trained_response": " We want to find the value of $X$ in the given situation.\nWe are told that the probability of earning an A is .7 times the probability of earning a B, and the probability of earning a C is 1.4 times the probability of earning a B.\nLet's assume that there are $B$ students who earn a B grade.\nAccording to the information provided, we can set up two equations:\nProbability of earning an A = .7 * Probability of earning a B\nProbability of earning a C = 1.4 * Probability of earning a B\nWe also know tha"
+    },
+    {
+      "index": 25,
+      "type": "MATH_SV",
+      "prompt": "Find the value of $12 \\times X + 36 \\times 12$. 720. What is the value of unknown variable X?",
+      "ground_truth": "24",
+      "base_pred": "24",
+      "trained_pred": "288",
+      "trained_response": " To solve this problem, we need to determine the value of x, which represents the unknown variable in the given expression.\nLet's break down the information given:\n$12 times X = $X\n36 times 12 = $432\nThe sum of these two values is equal to $720.\nWe can set up the equation as follows:\n$X + $432 = $720\nLet's solve for x:\nTo isolate x, we subtract $432 from both sides of the equation:\n$X + $432 - $432 = $720 - $432\n$X = $288\nTherefore, the value of the unknown variable x is 288.\nThe answer is: 288"
+    },
+    {
+      "index": 38,
+      "type": "MATH_AnsAug",
+      "prompt": "Evaluate \\[\\frac 2{\\log_4{2000^6}} + \\frac 3{\\log_5{2000^6}},\\]giving your answer as a fraction in lowest terms.",
+      "ground_truth": "6",
+      "base_pred": "6",
+      "trained_pred": ".",
+      "trained_response": " To solve the expression \\(\\frac{2}{\\log_4{2000^6}} + \\frac{3}{\\log_5{2000^6}}\\), we start by using the change of base formula for logarithms, which states that \\(\\log_a b = \\frac{\\log_c b}{\\log_c a}\\). Here, we will use the natural logarithm (base \\(e\\)) for convenience.\n\nFirst, rewrite each term in the expression using the change of base formula:\n\\[\n\\log_4{2000^6} = \\frac{\\ln{2000^6}}{\\ln{4}} = \\frac{6\\ln{2000}}{\\ln{4}}\n\\]\nand\n\\[\n\\log_5{2000^6} = \\frac{\\ln{2000^6}}{\\ln{5}} = \\frac{6\\ln{2000}}{"
+    },
+    {
+      "index": 59,
+      "type": "GSM_FOBAR",
+      "prompt": "Carmen is selling girl scout cookies. She sells x boxes of samoas to the green house for $4 each; two boxes of thin mints for $3.50 each and one box of fudge delights for $5 to the yellow house; and n",
+      "ground_truth": "3",
+      "base_pred": "3",
+      "trained_pred": "4.125",
+      "trained_response": " Carmen sold x boxes of samoas at $4 each, so she made 4x dollars from selling samoas.\nShe also sold two boxes of thin mints for $3.50 each and one box of fudge delights for $5 to the yellow house, which means she made (2 * $3.50) + $5 = $7.50 from selling thin mints and fudge delights.\nShe sold nine boxes of sugar cookies for $2 each to the brown house, so she made 9 * $2 = $18 from selling sugar cookies.\nThe total amount of money Carmen made is the sum of the money earned from selling samoas, "
+    },
+    {
+      "index": 103,
+      "type": "MATH_SV",
+      "prompt": "Find the value of $12 \\times 24 + X \\times 12$. The answer is 720. What is the value of unknown variable X?",
+      "ground_truth": "36",
+      "base_pred": "36",
+      "trained_pred": "30",
+      "trained_response": " To solve for the unknown variable \\(X\\) in the equation \\(12 \\times 24 + X \\times 12 = 720\\), we can follow these steps:\n\n1. First, simplify the left side of the equation by combining like terms:\n   \\[\n   12 \\times 24 + X \\times 12 = 360 + 12X\n   \\]\n   So the equation becomes:\n   \\[\n   360 + 12X = 720\n   \\]\n\n2. Next, isolate the term with \\(X\\) by subtracting 360 from both sides of the equation:\n   \\[\n   12X = 720 - 360\n   \\]\n   Simplifying the right side gives:\n   \\[\n   12X = 360\n   \\]\n\n3. Now"
+    },
+    {
+      "index": 131,
+      "type": "GSM_SV",
+      "prompt": "A secretary who has been working for 6 years and who earns €10,000 a month has obtained a salary increase of x%. Her new salary is 10200. What is the value of unknown variable x?",
+      "ground_truth": "2",
+      "base_pred": "2",
+      "trained_pred": "20000",
+      "trained_response": " To solve this problem, we need to determine the value of x, which represents the percentage increase in the secretary's salary.\nLet's break down the information given:\nInitial salary: €10,000\nNew salary: €10,200\nWe can set up the equation as follows:\nInitial salary + (Percentage increase * Initial salary) = New salary\n€10,000 + (x/100 * €10,000) = €10,200\nLet's simplify and solve for x:\n€10,000 + (x/100 * €10,000) = €10,200\nTo isolate x, we subtract €10,000 from both sides of the equation:\n€10,"
+    },
+    {
+      "index": 148,
+      "type": "GSM_SV",
+      "prompt": "Dilan, Martha, Phillip, and Veronica went to the park together to have some fun. They all had a different number of marbles: Dilan had x marbles, Martha had 20 marbles, Phillip had 19 marbles and fina",
+      "ground_truth": "14",
+      "base_pred": "14",
+      "trained_pred": "1",
+      "trained_response": " To solve this problem, we need to determine the value of x, which represents the number of marbles Dilan had initially.\nLet's break down the information given:\nNumber of marbles Dilan had: x\nNumber of marbles Martha had: 20\nNumber of marbles Phillip had: 19\nNumber of marbles Veronica had: 7\nTotal number of marbles at the end of the day: 3 * 15 = 45 (since each friend had 15 marbles)\nWe can set up the equation as follows:\nNumber of marbles Dilan had + Number of marbles Martha had + Number of mar"
+    },
+    {
+      "index": 156,
+      "type": "MATH_Rephrased",
+      "prompt": "What is the result of the expression $12 \\times 24 + 36 \\times 12$?",
+      "ground_truth": "720",
+      "base_pred": "720",
+      "trained_pred": "1152",
+      "trained_response": " To find the value of the expression \\(12 \\times 24 + 36 \\times 12\\), we can use the distributive property of multiplication over addition. The distributive property states that \\(a(b+c) = ab + ac\\). Here, we can rewrite the expression as follows:\n\n\\[12 \\times 24 + 36 \\times 12 = (12 + 36) \\times 24.\\]\n\nNext, we simplify the expression inside the parentheses:\n\n\\[12 + 36 = 48.\\]\n\nSo the expression becomes:\n\n\\[48 \\times 24.\\]\n\nNow, we need to calculate \\(48 \\times 24\\). We can use the distributive"
+    },
+    {
+      "index": 159,
+      "type": "MATH_Rephrased",
+      "prompt": "The center of a circle is located inside the parabola defined by the equation $y = x^2$. The circle is tangent to the parabola at two points. What is the vertical distance between the center of the ci",
+      "ground_truth": "2",
+      "base_pred": "2",
+      "trained_pred": "0",
+      "trained_response": " To solve this problem, we need to find the vertical distance between the center of the circle and the points of tangency where the circle is tangent to the parabola \\(y = x^2\\). Let's denote the center of the circle by \\((h, k)\\) and its radius by \\(r\\).\n\nSince the circle is tangent to the parabola at two points, the distance from the center of the circle to each point of tangency must be equal to the radius \\(r\\). The equation of the parabola can be rewritten in parametric form as \\((x, x^2)\\)"
+    },
+    {
+      "index": 167,
+      "type": "MATH_FOBAR",
+      "prompt": "A line is parameterized by a parameter $t,$ so that the vector on the line at $t = -1$ is $\\begin{pmatrix} 1 \\\\ 3 \\\\ 8 \\end{pmatrix},$ and the vector on the line at $t = 2$ is $\\begin{pmatrix} 0 \\\\ -2",
+      "ground_truth": "3",
+      "base_pred": "3",
+      "trained_pred": "-",
+      "trained_response": " We are given that a line is parameterized by a parameter $t,$ and the vector on the line at $t = -1$ is $\\begin{pmatrix} 1 \\\\ 3 \\\\ 8 \\end{pmatrix},$ and the vector on the line at $t = 2$ is $\\begin{pmatrix} 0 \\\\ -2 \\\\ -4 \\end{pmatrix}.$\nTo find the vector on the line at $t = X$, we can use the concept of linear interpolation.\nThe difference between the vectors at $t = -1$ and $t = 2$ is:\n$\\begin{pmatrix} 0 \\\\ -2 \\\\ -4 \\end{pmatrix} - \\begin{pmatrix} 1 \\\\ 3 \\\\ 8 \\end{pmatrix} = \\begin{pmatrix} -"
+    },
+    {
+      "index": 174,
+      "type": "GSM_Rephrased",
+      "prompt": "If Jim has a total of 301 model cars and he has 4 times as many Buicks as Fords, with 3 more than twice the number of Fords than Chevys, how many Buicks does Jim have?",
+      "ground_truth": "220",
+      "base_pred": "220",
+      "trained_pred": "216",
+      "trained_response": " Let's assume that the number of Chevys is C.\nAccording to the problem, the number of Fords is 2C + 3 (since there are 3 more than twice the number of Fords than Chevys).\nAnd the number of Buicks is 4 times as many as Fords, so it's 4(2C + 3) = 8C + 12.\nThe total number of model cars is C + (2C + 3) + (8C + 12) = 11C + 15.\nWe know that the total number of model cars is 301, so we can set up the equation: 11C + 15 = 301.\nSolving for C, we get: 11C = 286, and therefore C = 26.\nSo Jim has 8(26) + 1"
+    }
+  ],
+  "per_type": {
+    "MATH_AnsAug": {
+      "base": {
+        "correct": 8,
+        "total": 25
+      },
+      "trained": {
+        "correct": 15,
+        "total": 25
+      },
+      "base_acc": 0.32,
+      "trained_acc": 0.6
+    },
+    "MATH_FOBAR": {
+      "base": {
+        "correct": 11,
+        "total": 25
+      },
+      "trained": {
+        "correct": 10,
+        "total": 25
+      },
+      "base_acc": 0.44,
+      "trained_acc": 0.4
+    },
+    "MATH_SV": {
+      "base": {
+        "correct": 9,
+        "total": 25
+      },
+      "trained": {
+        "correct": 14,
+        "total": 25
+      },
+      "base_acc": 0.36,
+      "trained_acc": 0.56
+    },
+    "GSM_FOBAR": {
+      "base": {
+        "correct": 16,
+        "total": 25
+      },
+      "trained": {
+        "correct": 19,
+        "total": 25
+      },
+      "base_acc": 0.64,
+      "trained_acc": 0.76
+    },
+    "MATH_Rephrased": {
+      "base": {
+        "correct": 8,
+        "total": 25
+      },
+      "trained": {
+        "correct": 12,
+        "total": 25
+      },
+      "base_acc": 0.32,
+      "trained_acc": 0.48
+    },
+    "GSM_Rephrased": {
+      "base": {
+        "correct": 8,
+        "total": 25
+      },
+      "trained": {
+        "correct": 20,
+        "total": 25
+      },
+      "base_acc": 0.32,
+      "trained_acc": 0.8
+    },
+    "GSM_SV": {
+      "base": {
+        "correct": 12,
+        "total": 25
+      },
+      "trained": {
+        "correct": 15,
+        "total": 25
+      },
+      "base_acc": 0.48,
+      "trained_acc": 0.6
+    },
+    "GSM_AnsAug": {
+      "base": {
+        "correct": 11,
+        "total": 25
+      },
+      "trained": {
+        "correct": 24,
+        "total": 25
+      },
+      "base_acc": 0.44,
+      "trained_acc": 0.96
+    }
+  }
+}

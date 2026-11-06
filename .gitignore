@@ -1,0 +1,70 @@
+# ── Secrets & credentials ──────────────────────────────────────────────
+.env
+*.env
+!.env.example
+
+# ── Python ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ── Virtual environments ───────────────────────────────────────────────
+eval_env/
+venv/
+env/
+.venv/
+ENV/
+
+# ── Model weights & large artifacts ────────────────────────────────────
+merged_model/
+trained_adapter/
+*.safetensors
+*.gguf
+*.bin
+*.pt
+*.pth
+*.ckpt
+gcloud.zip
+gcloud_installer.exe
+
+# ── Large datasets (regenerate from HuggingFace) ───────────────────────
+data/grpo_train.json
+data/grpo_heldout.json
+
+# ── Logs & temp ────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── IDE / editor ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+
+# ── Claude ─────────────────────────────────────────────────────────────
+.claude/
+
+# ── Junk ────────────────────────────────────────────────────────────────
+15}:

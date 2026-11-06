@@ -1,0 +1,30 @@
+# SageMaker GRPO Training Dependencies
+# SageMaker PyTorch 2.1 container already has torch+cu121 — DO NOT reinstall it.
+
+# Unsloth (from git) - memory-efficient fine-tuning
+unsloth @ git+https://github.com/unslothai/unsloth.git
+
+# Training / alignment libraries
+trl==0.24.0
+peft==0.11.1
+accelerate==0.33.0
+transformers==4.44.0
+
+# Dataset & model hub
+datasets==2.20.0
+huggingface_hub==0.24.0
+bitsandbytes==0.43.1
+
+# Experiment tracking
+wandb==0.17.0
+
+# Hackathon toolkits
+aligntune @ git+https://github.com/lexi-labs/aligntune.git
+auditkit @ git+https://github.com/lexi-labs/auditkit.git
+
+# Inference server (for eval / vLLM-style serving)
+sglang==0.3.0
+
+# Scientific computing
+numpy==1.26.4
+scipy==1.13.1

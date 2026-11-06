@@ -1,0 +1,20 @@
+{
+  "total_clean_rows": 394996,
+  "empty_rows_removed": 4,
+  "gsm_rows": 240000,
+  "math_rows": 154996,
+  "unique_original_questions": 13929,
+  "train_rows": 356197,
+  "heldout_rows": 38799,
+  "train_original_questions": 12537,
+  "heldout_original_questions": 1392,
+  "train_gsm": 215925,
+  "train_math": 140272,
+  "heldout_gsm": 24075,
+  "heldout_math": 14724,
+  "answer_extraction_rate_train": "100.0%",
+  "answer_extraction_rate_heldout": "100.0%",
+  "split_method": "group_by_original_question_90_10",
+  "random_seed": 42,
+  "notes": "ALL data kept (GSM + MATH). No leakage. Answer extraction via #### marker, \boxed{}, or last number fallback."
+}
